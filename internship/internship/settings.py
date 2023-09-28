@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'internship.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    },
+        'NAME': 'pereval_db',
+        'USER': FSTR_DB_LOGIN,
+        'PASSWORD': FSTR_DB_PASS,
+        'HOST': FSTR_DB_HOST,
+        'PORT': FSTR_DB_PORT,
+    }
 }
 
 # Password validation
